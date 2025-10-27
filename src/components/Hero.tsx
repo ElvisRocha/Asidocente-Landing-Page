@@ -3,10 +3,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import heroImage from '@/assets/hero-teacher.jpg';
+import { VideoModal } from '@/components/VideoModal';
 
 export function Hero() {
   const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -49,7 +51,12 @@ export function Hero() {
                 {t.hero.ctaPrimary}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button size="lg" variant="outline" className="transition-all hover:scale-105 group">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="transition-all hover:scale-105 group"
+                onClick={() => setIsVideoOpen(true)}
+              >
                 <Play className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
                 {t.hero.ctaSecondary}
               </Button>
@@ -74,6 +81,13 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      <VideoModal
+        open={isVideoOpen}
+        onOpenChange={setIsVideoOpen}
+        videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        title={t.hero.ctaSecondary}
+      />
     </section>
   );
 }
