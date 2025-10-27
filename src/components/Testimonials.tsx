@@ -29,7 +29,7 @@ export function Testimonials() {
             >
               <CardContent className="p-6">
                 <Quote className="h-10 w-10 text-primary mb-4" />
-                <p className="text-muted-foreground mb-6 italic font-nunito">{testimonial.text}</p>
+                <p className="text-muted-foreground mb-6 italic">{testimonial.text}</p>
                 <div>
                   <p className="font-bold">{testimonial.author}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
