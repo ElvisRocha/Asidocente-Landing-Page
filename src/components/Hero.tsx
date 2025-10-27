@@ -24,8 +24,8 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-[7fr_3fr] gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Text Area - 70% on desktop */}
+        <div className="grid lg:grid-cols-[4fr_1fr] gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+          {/* Text Area - 80% on desktop */}
           <div className="text-center lg:text-left py-16 lg:py-20 px-6 lg:px-10">
             <h1
               className={`text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold mb-6 leading-[1.4] transition-all duration-1000 ${
@@ -64,7 +64,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Image Area - 30% on desktop */}
+          {/* Image Area - 20% on desktop */}
           <div
             className={`relative transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
