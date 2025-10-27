@@ -1,6 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Languages } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export function Navbar() {
@@ -66,11 +65,11 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <Button
               variant="ghost"
-              size="icon"
+              size="sm"
               onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-              className="transition-transform hover:scale-110 text-background/80 hover:text-background hover:bg-background/10"
+              className="transition-transform hover:scale-110 text-background/80 hover:text-background hover:bg-background/10 font-semibold"
             >
-              <Languages className="h-5 w-5" />
+              {language === 'es' ? 'EN' : 'ES'}
             </Button>
             <Button className="bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow">
               {t.nav.login}
