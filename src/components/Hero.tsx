@@ -16,9 +16,9 @@ export function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Floating shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float-delayed" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-success/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-hero rounded-full blur-3xl animate-float opacity-20" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-hero rounded-full blur-3xl animate-float-delayed opacity-30" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-hero rounded-full blur-3xl animate-float opacity-20" />
       </div>
 
       <div className="container mx-auto px-4 z-10">
@@ -69,8 +69,8 @@ export function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-2xl -z-10 animate-float-delayed" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-success rounded-2xl -z-10 animate-float" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow" />
           </div>
         </div>
       </div>
