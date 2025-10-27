@@ -8,10 +8,14 @@ const icons = [CheckCircle2, ClipboardCheck, Brain, MessageSquare, BarChart3];
 
 export function Services() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2, freezeOnceVisible: false });
+  const { ref, isIntersecting } = useIntersectionObserver({ 
+    threshold: 0.1, 
+    rootMargin: '50px',
+    freezeOnceVisible: true 
+  });
 
   return (
-    <section id="services" className="py-24 bg-muted/30">
+    <section id="services" className="py-24 bg-muted/30" ref={ref}>
       <div className="container mx-auto px-4">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
@@ -35,7 +39,7 @@ export function Services() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
           </div>
 
-          <div ref={ref} className="grid gap-4">
+          <div className="grid gap-4">
             {t.services.items.map((service, index) => {
               const Icon = icons[index];
               return (

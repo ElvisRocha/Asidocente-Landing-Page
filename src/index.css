@@ -114,9 +114,12 @@ All colors MUST be HSL.
     animation: fade-in-up 0.6s ease-out;
   }
 
-  /* Disable exit animations on mobile */
+  /* Disable exit animations on mobile for better performance */
   @media (max-width: 768px) {
-    [data-state="closed"] {
+    [data-state="closed"],
+    .animate-fade-out,
+    .animate-scale-out,
+    .animate-slide-out-right {
       animation: none !important;
     }
   }
