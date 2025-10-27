@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       headline: 'La herramienta inteligente que transforma tu forma de enseñar.',
       subheadline: 'Simplifica tu gestión académica, ahorra horas de trabajo y mejora la comunicación con los padres. Con nuestra plataforma, puedes registrar asistencia, calificaciones y planificar con inteligencia artificial… todo desde un solo lugar.',
-      ctaPrimary: 'Comenzar Gratis',
+      ctaPrimary: 'Solicitar Asidocente',
       ctaSecondary: 'Ver Cómo Funciona',
     },
     focus: {
@@ -20,7 +20,7 @@ export const translations = {
     },
     about: {
       headline: 'Nacimos para empoderar a los educadores.',
-      text: 'Sabemos que los docentes son el corazón de la educación, pero las tareas administrativas pueden ser abrumadoras. Por eso creamos una solución diseñada para simplificar, automatizar y potenciar tu trabajo diario. Con tecnología adaptada a las aulas latinoamericanas, nuestra misión es ayudarte a ahorrar tiempo, mejorar la comunicación con los padres y elevar la calidad del aprendizaje en cada clase. 💡 Una herramienta creada por y para educadores visionarios.',
+      text: 'Sabemos que los docentes son el corazón de la educación, pero las tareas administrativas pueden ser abrumadoras. Por eso creamos una solución diseñada para simplificar, automatizar y potenciar tu trabajo diario. Con tecnología adaptada a las aulas latinoamericanas, nuestra misión es ayudarte a ahorrar tiempo, mejorar la comunicación con los padres y elevar la calidad del aprendizaje en cada clase. Una herramienta creada por y para educadores visionarios.',
     },
     services: {
       headline: 'Servicios que transforman tu día a día',
@@ -99,13 +99,13 @@ export const translations = {
         name: 'Nombre',
         email: 'Correo Electrónico',
         message: 'Mensaje',
-        submit: 'Comenzar Ahora',
+        submit: 'Solicitar Acceso',
         talk: 'Hablar con Nosotros',
       },
       success: '¡Gracias! Te contactaremos pronto.',
     },
     footer: {
-      tagline: 'Transformando la educación, un docente a la vez.',
+      tagline: 'Enfócate en lo que realmente importa: enseñar.',
       newsletter: {
         title: 'Mantente Actualizado',
         description: 'Recibe tips, recursos y novedades para mejorar tu enseñanza.',
@@ -152,7 +152,7 @@ export const translations = {
     hero: {
       headline: 'The smart tool that transforms the way you teach.',
       subheadline: 'Simplify your academic management, save hours of work, and improve communication with parents. With our platform, you can record attendance, grades, and plan with artificial intelligence… all from a single place.',
-      ctaPrimary: 'Start Free',
+      ctaPrimary: 'Request Asidocente',
       ctaSecondary: 'See How It Works',
     },
     focus: {
@@ -160,7 +160,7 @@ export const translations = {
     },
     about: {
       headline: 'We were born to empower educators.',
-      text: 'We know teachers are the heart of education, but administrative tasks can be overwhelming. That\'s why we created a solution designed to simplify, automate, and enhance your daily work. With technology tailored for Latin American classrooms, our mission is to help you save time, improve communication with parents, and elevate the quality of learning in every class. 💡 A tool created by and for visionary educators.',
+      text: 'We know teachers are the heart of education, but administrative tasks can be overwhelming. That\'s why we created a solution designed to simplify, automate, and enhance your daily work. With technology tailored for Latin American classrooms, our mission is to help you save time, improve communication with parents, and elevate the quality of learning in every class. A tool created by and for visionary educators.',
     },
     services: {
       headline: 'Services that transform your daily work',
@@ -239,13 +239,13 @@ export const translations = {
         name: 'Name',
         email: 'Email',
         message: 'Message',
-        submit: 'Start Now',
+        submit: 'Request Access',
         talk: 'Talk to Us',
       },
       success: 'Thank you! We will contact you soon.',
     },
     footer: {
-      tagline: 'Transforming education, one teacher at a time.',
+      tagline: 'Focus on what really matters: teaching.',
       newsletter: {
         title: 'Stay Updated',
         description: 'Receive tips, resources, and news to improve your teaching.',
