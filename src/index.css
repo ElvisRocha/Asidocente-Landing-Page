@@ -113,6 +113,13 @@ All colors MUST be HSL.
   .animate-fade-in-up {
     animation: fade-in-up 0.6s ease-out;
   }
+
+  /* Disable exit animations on mobile */
+  @media (max-width: 768px) {
+    [data-state="closed"] {
+      animation: none !important;
+    }
+  }
 }
 
 @keyframes float {

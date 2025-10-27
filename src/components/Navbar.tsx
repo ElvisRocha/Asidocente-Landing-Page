@@ -1,11 +1,20 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 
 export function Navbar() {
   const { language, setLanguage, t } = useLanguage();
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +40,7 @@ export function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -71,9 +81,55 @@ export function Navbar() {
             >
               {language === 'es' ? 'EN' : 'ES'}
             </Button>
-            <Button className="bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow">
+            
+            {/* Desktop Login Button */}
+            <Button className="hidden md:flex bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow">
               {t.nav.login}
             </Button>
+
+            {/* Mobile Menu */}
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="md:hidden text-background/80 hover:text-background hover:bg-background/10"
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent 
+                side="right" 
+                className="w-[280px] bg-gradient-to-b from-foreground to-foreground/95"
+              >
+                <SheetHeader>
+                  <SheetTitle className="text-left bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
+                    Asidocente
+                  </SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col gap-4 mt-8">
+                  {['home', 'about', 'services', 'process', 'testimonials', 'contact'].map((section) => (
+                    <button
+                      key={section}
+                      onClick={() => scrollToSection(section)}
+                      className={`text-left text-base font-medium transition-colors py-2 ${
+                        activeSection === section 
+                          ? 'text-primary-glow' 
+                          : 'text-background/80 hover:text-background'
+                      }`}
+                    >
+                      {t.nav[section as keyof typeof t.nav]}
+                    </button>
+                  ))}
+                  <Button 
+                    className="mt-4 bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow w-full"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t.nav.login}
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
