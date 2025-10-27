@@ -3,8 +3,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import heroImage from '@/assets/hero-teacher.jpg';
-import studentsLearning from '@/assets/students-learning.jpg';
-import teachersCollaboration from '@/assets/teachers-collaboration.jpg';
 import { VideoModal } from '@/components/VideoModal';
 
 export function Hero() {
@@ -66,62 +64,22 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Image Area - 20% on desktop - Three images layout */}
+          {/* Image Area - 20% on desktop */}
           <div
             className={`relative transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
             }`}
           >
-            <div className="grid grid-cols-2 gap-3 lg:gap-4">
-              {/* Main large image on the left */}
-              <div 
-                className={`col-span-2 md:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-glow ${
-                  isVisible ? 'animate-scale-in' : ''
-                }`}
-              >
-                <img
-                  src={heroImage}
-                  alt="Teacher using technology with students"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
-              </div>
-
-              {/* Two smaller images stacked on the right */}
-              <div className="col-span-2 md:col-span-1 flex flex-col gap-3 lg:gap-4">
-                {/* Top right image */}
-                <div 
-                  className={`relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-200 hover:scale-105 hover:shadow-glow ${
-                    isVisible ? 'animate-fade-in' : ''
-                  }`}
-                >
-                  <img
-                    src={studentsLearning}
-                    alt="Students learning together"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
-                </div>
-
-                {/* Bottom right image */}
-                <div 
-                  className={`relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-400 hover:scale-105 hover:shadow-glow ${
-                    isVisible ? 'animate-fade-in' : ''
-                  }`}
-                >
-                  <img
-                    src={teachersCollaboration}
-                    alt="Teachers collaborating"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
-                </div>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={heroImage}
+                alt="Teacher using technology with students"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
             </div>
-            
-            {/* Decorative floating elements */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow hidden lg:block" />
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow hidden lg:block" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow" />
           </div>
         </div>
       </div>
