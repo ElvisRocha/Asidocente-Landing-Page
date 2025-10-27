@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import heroImage from '@/assets/hero-teacher.jpg';
 
 export function Hero() {
   const { t } = useLanguage();
@@ -21,36 +22,55 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1
-            className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <span className="text-gradient">{t.hero.headline}</span>
-          </h1>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <h1
+              className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <span className="text-gradient">{t.hero.headline}</span>
+            </h1>
 
-          <p
-            className={`text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            {t.hero.subheadline}
-          </p>
+            <p
+              className={`text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl transition-all duration-1000 delay-200 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              {t.hero.subheadline}
+            </p>
+
+            <div
+              className={`flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 transition-all duration-1000 delay-400 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <Button size="lg" className="bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group">
+                {t.hero.ctaPrimary}
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+              <Button size="lg" variant="outline" className="transition-all hover:scale-105 group">
+                <Play className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
+                {t.hero.ctaSecondary}
+              </Button>
+            </div>
+          </div>
 
           <div
-            className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-1000 delay-400 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`relative transition-all duration-1000 delay-600 ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
             }`}
           >
-            <Button size="lg" className="bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group">
-              {t.hero.ctaPrimary}
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button size="lg" variant="outline" className="transition-all hover:scale-105 group">
-              <Play className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-              {t.hero.ctaSecondary}
-            </Button>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={heroImage}
+                alt="Teacher using technology with students"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-2xl -z-10 animate-float-delayed" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-success rounded-2xl -z-10 animate-float" />
           </div>
         </div>
       </div>
