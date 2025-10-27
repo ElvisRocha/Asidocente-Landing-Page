@@ -11,7 +11,11 @@ import contactImage from '@/assets/parent-communication.jpg';
 export function Contact() {
   const { t } = useLanguage();
   const { toast } = useToast();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.3, freezeOnceVisible: false });
+  const { ref, isIntersecting } = useIntersectionObserver({ 
+    threshold: 0.2, 
+    rootMargin: '50px',
+    freezeOnceVisible: true 
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
