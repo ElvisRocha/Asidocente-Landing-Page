@@ -8,53 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    /* Background Colors */
+    --background: 210 20% 98%;
+    --foreground: 217 33% 17%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 210 20% 98%;
+    --card-foreground: 217 33% 17%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 210 20% 98%;
+    --popover-foreground: 217 33% 17%;
 
-    --primary: 217 91% 60%;
+    /* Primary (AI Blue Button) */
+    --primary: 210 70% 59%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    --primary-glow: 174 62% 47%;
 
-    --secondary: 16 100% 66%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary (Digital Sky Blue) */
+    --secondary: 197 93% 70%;
+    --secondary-foreground: 217 33% 17%;
 
+    /* Accent (Pastel Violet) */
+    --accent: 271 47% 71%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success */
     --success: 142 76% 45%;
     --success-foreground: 0 0% 100%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    /* Muted */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 20% 35%;
 
-    --accent: 16 100% 66%;
-    --accent-foreground: 0 0% 100%;
-
+    /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
+    /* Borders and Inputs */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    --ring: 210 70% 59%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(250 70% 65%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(16 100% 66%) 0%, hsl(35 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 70% 59%) 0%, hsl(271 47% 71%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 20% 95%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(197 93% 70%) 0%, hsl(174 62% 47%) 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 13% 91% / 0.5);
-    --shadow-md: 0 4px 6px -1px hsl(220 13% 91% / 0.3);
-    --shadow-lg: 0 10px 15px -3px hsl(220 13% 91% / 0.2);
-    --shadow-xl: 0 20px 25px -5px hsl(220 13% 91% / 0.15);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    /* Soft Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 13% 91% / 0.4);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 91% / 0.25);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 91% / 0.15);
+    --shadow-xl: 0 20px 25px -5px hsl(220 13% 91% / 0.1);
+    --shadow-glow: 0 0 30px hsl(210 70% 59% / 0.2);
 
-    /* Transitions */
+    /* Smooth Transitions */
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,7 +76,13 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
   }
 
   html {
