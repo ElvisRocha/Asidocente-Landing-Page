@@ -7,7 +7,7 @@ const icons = [UserPlus, Settings, ClipboardList, Users, Sparkles];
 
 export function Process() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2 });
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2, freezeOnceVisible: false });
 
   return (
     <section id="process" className="py-24">

@@ -3,7 +3,7 @@ import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 
 export function Focus() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.3 });
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.3, freezeOnceVisible: false });
 
   return (
     <section className="py-24 bg-muted/30">

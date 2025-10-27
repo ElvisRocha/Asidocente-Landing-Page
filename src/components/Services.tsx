@@ -8,7 +8,7 @@ const icons = [CheckCircle2, ClipboardCheck, Brain, MessageSquare, BarChart3];
 
 export function Services() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2 });
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2, freezeOnceVisible: false });
 
   return (
     <section id="services" className="py-24 bg-muted/30">

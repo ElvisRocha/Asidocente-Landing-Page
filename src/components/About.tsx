@@ -5,7 +5,7 @@ import aboutImage from '@/assets/teachers-collaboration.jpg';
 
 export function About() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.3 });
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.3, freezeOnceVisible: false });
 
   return (
     <section id="about" className="py-24">

@@ -5,7 +5,7 @@ import { Quote } from 'lucide-react';
 
 export function Testimonials() {
   const { t } = useLanguage();
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2 });
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2, freezeOnceVisible: false });
 
   return (
     <section id="testimonials" className="py-24 bg-muted/30">
