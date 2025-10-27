@@ -50,7 +50,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
-                EduPlatform
+                Asidocente
               </h3>
               <p className="text-background/80 text-sm leading-relaxed">
                 {t.footer.tagline}
