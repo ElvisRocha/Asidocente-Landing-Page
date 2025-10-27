@@ -24,10 +24,11 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+          {/* Text Area - 60% on desktop */}
+          <div className="text-center lg:text-left py-16 lg:py-20 px-6 lg:px-10">
             <h1
-              className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
+              className={`text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold mb-6 leading-[1.4] transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -35,7 +36,7 @@ export function Hero() {
             </h1>
 
             <p
-              className={`text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl transition-all duration-1000 delay-200 ${
+              className={`text-base md:text-lg lg:text-xl text-muted-foreground mb-6 leading-[1.6] transition-all duration-1000 delay-200 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -43,7 +44,7 @@ export function Hero() {
             </p>
 
             <div
-              className={`flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 transition-all duration-1000 delay-400 ${
+              className={`flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-6 transition-all duration-1000 delay-400 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -63,6 +64,7 @@ export function Hero() {
             </div>
           </div>
 
+          {/* Image Area - 40% on desktop */}
           <div
             className={`relative transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
