@@ -3,8 +3,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import heroImage from '@/assets/hero-teacher.jpg';
-import studentsLearning from '@/assets/students-learning.jpg';
-import teachersCollaboration from '@/assets/teachers-collaboration.jpg';
 import { VideoModal } from '@/components/VideoModal';
 
 export function Hero() {
@@ -66,57 +64,22 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Image Area - 20% on desktop - Three overlapping images */}
+          {/* Image Area - 20% on desktop */}
           <div
-            className={`relative h-[500px] lg:h-[600px] transition-all duration-1000 delay-600 ${
+            className={`relative transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
             }`}
           >
-            {/* Bottom image - Students Learning */}
-            <div 
-              className={`absolute top-[200px] lg:top-[250px] right-0 w-[85%] h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-400 hover:scale-105 hover:shadow-glow hover:z-30 z-10 ${
-                isVisible ? 'animate-fade-in' : ''
-              }`}
-            >
-              <img
-                src={studentsLearning}
-                alt="Students learning together"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
-            </div>
-
-            {/* Middle image - Teachers Collaboration */}
-            <div 
-              className={`absolute top-[100px] lg:top-[130px] right-0 w-[85%] h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-200 hover:scale-105 hover:shadow-glow hover:z-30 z-20 ${
-                isVisible ? 'animate-scale-in' : ''
-              }`}
-            >
-              <img
-                src={teachersCollaboration}
-                alt="Teachers collaborating"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
-            </div>
-
-            {/* Top image - Main Hero */}
-            <div 
-              className={`absolute top-0 right-[5%] w-[85%] h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-glow hover:z-30 z-30 ${
-                isVisible ? 'animate-scale-in' : ''
-              }`}
-            >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={heroImage}
                 alt="Teacher using technology with students"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
             </div>
-            
-            {/* Decorative floating elements */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow hidden lg:block" />
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow hidden lg:block" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow" />
           </div>
         </div>
       </div>
