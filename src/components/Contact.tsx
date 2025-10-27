@@ -98,7 +98,7 @@ export function Contact() {
                   type="submit"
                   size="lg"
                   disabled={isSubmitting}
-                  className="flex-1 bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group py-6 md:py-3"
+                  className="flex-1 bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group py-4 md:py-3"
                 >
                   {isSubmitting ? (
                     <span className="animate-pulse">Enviando...</span>
@@ -113,7 +113,7 @@ export function Contact() {
                   type="button"
                   size="lg"
                   variant="outline"
-                  className="flex-1 transition-all hover:scale-105 py-6 md:py-3"
+                  className="flex-1 transition-all hover:scale-105 py-4 md:py-3"
                 >
                   {t.contact.form.talk}
                 </Button>
