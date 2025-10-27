@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import heroImage from '@/assets/hero-teacher.jpg';
+import heroImage from '@/assets/hero-vertical.jpg';
 import { VideoModal } from '@/components/VideoModal';
 
 export function Hero() {
@@ -24,9 +24,9 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-[4fr_1fr] gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Text Area - 80% on desktop */}
-          <div className="text-center lg:text-left py-16 lg:py-20 px-6 lg:px-10">
+        <div className="grid lg:grid-cols-[7fr_3fr] gap-8 lg:gap-12 items-stretch max-w-7xl mx-auto">
+          {/* Text Area - 70% on desktop */}
+          <div className="text-center lg:text-left py-16 lg:py-20 px-6 lg:px-10 flex flex-col justify-center">
             <h1
               className={`text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold mb-6 leading-[1.4] transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -64,22 +64,22 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Image Area - 20% on desktop */}
+          {/* Image Area - 30% on desktop */}
           <div
-            className={`relative transition-all duration-1000 delay-600 ${
+            className={`relative h-full min-h-[400px] lg:min-h-[600px] transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
             }`}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-elegant h-full">
               <img
                 src={heroImage}
-                alt="Teacher using technology with students"
-                className="w-full h-auto object-cover"
+                alt="Teachers and students collaborating in modern classroom"
+                className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-hero rounded-2xl -z-10 animate-float-delayed shadow-glow opacity-60" />
+            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-hero rounded-2xl -z-10 animate-float shadow-glow opacity-60" />
           </div>
         </div>
       </div>
