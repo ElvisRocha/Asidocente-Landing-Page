@@ -88,7 +88,7 @@ export function Hero() {
 
             {/* Middle image - Teachers Collaboration */}
             <div 
-              className={`absolute top-[100px] lg:top-[130px] left-[10%] w-[85%] h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-200 hover:scale-105 hover:shadow-glow hover:z-30 z-20 ${
+              className={`absolute top-[100px] lg:top-[130px] right-0 w-[85%] h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 delay-200 hover:scale-105 hover:shadow-glow hover:z-30 z-20 ${
                 isVisible ? 'animate-scale-in' : ''
               }`}
             >
