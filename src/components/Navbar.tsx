@@ -52,9 +52,12 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
+          <button 
+            onClick={() => scrollToSection('home')}
+            className="text-2xl font-bold bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          >
             Asidocente
-          </div>
+          </button>
 
           <div className="hidden md:flex items-center gap-6">
             {['home', 'about', 'services', 'process', 'testimonials', 'contact'].map((section) => (
