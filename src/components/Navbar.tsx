@@ -83,7 +83,10 @@ export function Navbar() {
             </Button>
             
             {/* Desktop Login Button */}
-            <Button className="hidden md:flex bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow">
+            <Button 
+              onClick={() => window.open('https://app.asidocente.com/login', '_blank')}
+              className="hidden md:flex bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow"
+            >
               {t.nav.login}
             </Button>
 
@@ -123,7 +126,10 @@ export function Navbar() {
                   ))}
                   <Button 
                     className="mt-4 bg-gradient-hero hover:opacity-90 transition-opacity shadow-glow w-full"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      window.open('https://app.asidocente.com/login', '_blank');
+                      setMobileMenuOpen(false);
+                    }}
                   >
                     {t.nav.login}
                   </Button>
