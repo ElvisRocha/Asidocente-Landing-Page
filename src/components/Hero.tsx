@@ -14,6 +14,13 @@ export function Hero() {
     setIsVisible(true);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Floating shapes */}
@@ -48,7 +55,11 @@ export function Hero() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <Button size="lg" className="bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group">
+              <Button 
+                size="lg" 
+                className="bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group"
+                onClick={() => scrollToSection('contact')}
+              >
                 {t.hero.ctaPrimary}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
