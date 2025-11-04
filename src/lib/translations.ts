@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       headline: 'La herramienta inteligente que transforma tu forma de enseñar.',
       subheadline: 'Simplifica tu gestión académica, ahorra horas de trabajo y mejora la comunicación con los padres. Con nuestra plataforma, puedes registrar asistencia, calificaciones y planificar con inteligencia artificial… todo desde un solo lugar.',
-      ctaPrimary: 'Unete a Asidocente',
+      ctaPrimary: 'Únete a Asidocente',
       ctaSecondary: 'Ver Cómo Funciona',
     },
     focus: {

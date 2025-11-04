@@ -58,7 +58,7 @@ export function Hero() {
               <Button 
                 size="lg" 
                 className="bg-gradient-hero hover:opacity-90 transition-all hover:scale-105 group"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => window.open('https://app.asidocente.com/register', '_blank')}
               >
                 {t.hero.ctaPrimary}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
