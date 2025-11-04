@@ -7,6 +7,31 @@ import { useToast } from '@/hooks/use-toast';
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 import contactImage from '@/assets/parent-communication.jpg';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+// Importar banderas SVG
+import GT from 'country-flag-icons/react/3x2/GT';
+import BZ from 'country-flag-icons/react/3x2/BZ';
+import HN from 'country-flag-icons/react/3x2/HN';
+import SV from 'country-flag-icons/react/3x2/SV';
+import NI from 'country-flag-icons/react/3x2/NI';
+import CR from 'country-flag-icons/react/3x2/CR';
+import PA from 'country-flag-icons/react/3x2/PA';
+
+const CENTRAL_AMERICAN_COUNTRIES = [
+  { code: 'GT', name: 'Guatemala', Flag: GT },
+  { code: 'BZ', name: 'Belice', Flag: BZ },
+  { code: 'HN', name: 'Honduras', Flag: HN },
+  { code: 'SV', name: 'El Salvador', Flag: SV },
+  { code: 'NI', name: 'Nicaragua', Flag: NI },
+  { code: 'CR', name: 'Costa Rica', Flag: CR },
+  { code: 'PA', name: 'Panamá', Flag: PA },
+];
 
 export function Contact() {
   const { t } = useLanguage();
@@ -17,20 +42,50 @@ export function Contact() {
     freezeOnceVisible: true 
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      country: selectedCountry,
+      message: formData.get('message') as string,
+    };
 
-    toast({
-      title: t.contact.success,
-    });
+    try {
+      const response = await fetch('https://n8n.smartflow-automations.com/webhook/5b96cfff-2520-4628-af28-d23b39b63956', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+      if (!response.ok) {
+        throw new Error('Error al enviar el mensaje');
+      }
+
+      toast({
+        title: t.contact.success || '¡Mensaje enviado exitosamente!',
+        description: 'Nos pondremos en contacto contigo pronto.',
+      });
+
+      (e.target as HTMLFormElement).reset();
+      setSelectedCountry('');
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: 'Error al enviar el mensaje',
+        description: 'Por favor, intenta nuevamente más tarde.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,6 +126,7 @@ export function Contact() {
             >
               <div>
                 <Input
+                  name="name"
                   placeholder={t.contact.form.name}
                   required
                   className="transition-all focus:ring-2 focus:ring-primary"
@@ -78,6 +134,7 @@ export function Contact() {
               </div>
               <div>
                 <Input
+                  name="email"
                   type="email"
                   placeholder={t.contact.form.email}
                   required
@@ -85,7 +142,33 @@ export function Contact() {
                 />
               </div>
               <div>
+                <Select
+                  value={selectedCountry}
+                  onValueChange={setSelectedCountry}
+                  required
+                >
+                  <SelectTrigger className="w-full transition-all focus:ring-2 focus:ring-primary">
+                    <SelectValue placeholder="🌎 Selecciona tu país" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {CENTRAL_AMERICAN_COUNTRIES.map((country) => (
+                      <SelectItem 
+                        key={country.code} 
+                        value={country.name}
+                        className="cursor-pointer"
+                      >
+                        <div className="flex items-center gap-3">
+                          <country.Flag className="w-6 h-4 rounded-sm object-cover shadow-sm" />
+                          <span className="font-medium">{country.name}</span>
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div>
                 <Textarea
+                  name="message"
                   placeholder={t.contact.form.message}
                   required
                   rows={5}
@@ -114,6 +197,7 @@ export function Contact() {
                   size="lg"
                   variant="outline"
                   className="flex-1 transition-all hover:scale-105 py-4 md:py-3"
+                  onClick={() => window.open('https://cal.com/elvis-rocha-xws8oy/30min?overlayCalendar=true', '_blank')}
                 >
                   {t.contact.form.talk}
                 </Button>

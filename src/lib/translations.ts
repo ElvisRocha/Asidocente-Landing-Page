@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       headline: 'La herramienta inteligente que transforma tu forma de enseñar.',
       subheadline: 'Simplifica tu gestión académica, ahorra horas de trabajo y mejora la comunicación con los padres. Con nuestra plataforma, puedes registrar asistencia, calificaciones y planificar con inteligencia artificial… todo desde un solo lugar.',
-      ctaPrimary: 'Solicitar Asidocente',
+      ctaPrimary: 'Unete a Asidocente',
       ctaSecondary: 'Ver Cómo Funciona',
     },
     focus: {
@@ -98,9 +98,9 @@ export const translations = {
       form: {
         name: 'Nombre',
         email: 'Correo Electrónico',
-        message: 'Mensaje',
-        submit: 'Solicitar Acceso',
-        talk: 'Hablar con Nosotros',
+        message: 'Compartenos tus dudas o comentarios',
+        submit: 'Contactar Equipo',
+        talk: 'Agendar una reunión',
       },
       success: '¡Gracias! Te contactaremos pronto.',
     },
@@ -152,7 +152,7 @@ export const translations = {
     hero: {
       headline: 'The smart tool that transforms the way you teach.',
       subheadline: 'Simplify your academic management, save hours of work, and improve communication with parents. With our platform, you can record attendance, grades, and plan with artificial intelligence… all from a single place.',
-      ctaPrimary: 'Request Asidocente',
+      ctaPrimary: 'Join Asidocente',
       ctaSecondary: 'See How It Works',
     },
     focus: {
@@ -238,9 +238,9 @@ export const translations = {
       form: {
         name: 'Name',
         email: 'Email',
-        message: 'Message',
-        submit: 'Request Access',
-        talk: 'Talk to Us',
+        message: 'Share your questions or comments with us',
+        submit: 'Contact Team',
+        talk: 'Schedule a Meeting',
       },
       success: 'Thank you! We will contact you soon.',
     },
