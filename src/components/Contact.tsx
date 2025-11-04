@@ -57,7 +57,7 @@ export function Contact() {
     };
 
     try {
-      const response = await fetch('https://n8n.smartflow-automations.com/webhook/5b96cfff-2520-4628-af28-d23b39b63956', {
+      const response = await fetch(import.meta.env.VITE_N8N_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
