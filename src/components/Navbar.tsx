@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import asidocenteLogo from '@/assets/asidocente_logo.png';
 
 export function Navbar() {
   const { language, setLanguage, t } = useLanguage();
@@ -52,11 +53,18 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <button 
+          <button
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            Asidocente
+            <img
+              src={asidocenteLogo}
+              alt="Asidocente Logo"
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
+              Asidocente
+            </span>
           </button>
 
           <div className="hidden md:flex items-center gap-6">
@@ -109,8 +117,15 @@ export function Navbar() {
                 className="w-[280px] bg-gradient-to-b from-foreground to-foreground/95"
               >
                 <SheetHeader>
-                  <SheetTitle className="text-left bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
-                    Asidocente
+                  <SheetTitle className="text-left flex items-center gap-2">
+                    <img
+                      src={asidocenteLogo}
+                      alt="Asidocente Logo"
+                      className="h-8 w-auto"
+                    />
+                    <span className="bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
+                      Asidocente
+                    </span>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-4 mt-8">
