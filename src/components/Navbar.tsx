@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import asidocenteLogo from '@/assets/asidocente_logo.png';
+import asidocenteLogo from '@/assets/asidocente-logo.png';
 
 export function Navbar() {
   const { language, setLanguage, t } = useLanguage();
