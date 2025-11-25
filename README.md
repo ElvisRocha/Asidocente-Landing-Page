@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+# Asidocente Landing Page
 
-## Project info
+![Asidocente Logo](src/assets/asidocente-logo.png)
 
-**URL**: https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e
+## 🎓 About Asidocente
 
-## How can I edit this code?
+**Asidocente** is the intelligent tool designed specifically for primary school educators in Latin America. Our platform simplifies academic management, saves valuable time, and enhances communication with parents through AI-powered automation.
 
-There are several ways of editing your application.
+Visit us at: **[www.asidocente.com](https://www.asidocente.com)**
 
-**Use Lovable**
+## 🌟 Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e) and start prompting.
+This repository contains the official landing page for Asidocente, showcasing our mission to transform how teachers work by providing them with modern, intuitive tools for:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Simplified Academic Management** - Streamline administrative tasks and focus more on teaching
+- **Time-Saving Automation** - Let AI handle repetitive tasks so you can dedicate time to your students
+- **Enhanced Parent Communication** - Keep parents informed and engaged with ease
+- **Smart Planning** - AI-assisted lesson planning and curriculum management
+- **Progress Tracking** - Monitor student development with intelligent insights
 
-**Use your preferred IDE**
+## ✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Modern, Responsive Design** - Optimized for all devices and screen sizes
+- **Fast Performance** - Built with Vite for lightning-fast load times
+- **Accessibility** - Designed with inclusive practices for all users
+- **SEO Optimized** - Proper meta tags and semantic HTML for better discoverability
+- **Multi-language Ready** - Structured for easy internationalization
+- **Component-Based Architecture** - Modular, maintainable, and scalable
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Before you begin, ensure you have the following installed:
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** or **yarn** package manager
+- **Git** for version control
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ElvisRocha/Asidocente-Landing-Page.git
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Navigate to the project directory**
+   ```bash
+   cd Asidocente-Landing-Page
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:8080`
+
+### Available Scripts
+
+- `npm run dev` - Start the development server with hot-reload
+- `npm run build` - Build the production-ready application
+- `npm run build:dev` - Build with development mode enabled
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
+
+## 🛠️ Technology Stack
+
+This project is built with modern web technologies:
+
+- **[Vite](https://vitejs.dev/)** - Next-generation frontend tooling
+- **[React 18](https://react.dev/)** - UI library for building interactive interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful, accessible component library
+- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible UI primitives
+- **[React Router](https://reactrouter.com/)** - Client-side routing
+- **[React Hook Form](https://react-hook-form.com/)** - Performant form validation
+- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
+
+## 📁 Project Structure
+
+```
+Asidocente-Landing-Page/
+├── src/
+│   ├── assets/          # Images, logos, and static files
+│   ├── components/      # Reusable React components
+│   │   └── ui/         # shadcn/ui components
+│   ├── contexts/        # React Context providers
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions and helpers
+│   ├── pages/          # Page components
+│   └── main.tsx        # Application entry point
+├── public/             # Public static assets
+├── index.html          # HTML entry point
+├── vite.config.ts      # Vite configuration
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── tsconfig.json       # TypeScript configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🤝 Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+We welcome contributions from the community! Here's how you can help:
 
-**Use GitHub Codespaces**
+1. **Fork the repository** on GitHub
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Make your changes** following our coding standards
+4. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+5. **Push to your branch** (`git push origin feature/amazing-feature`)
+6. **Open a Pull Request** with a clear description of your changes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Coding Standards
 
-## What technologies are used for this project?
+- Write clean, readable, and well-documented code
+- Follow the existing code style and conventions
+- Use TypeScript types for all new code
+- Test your changes thoroughly before submitting
+- Keep commits atomic and write meaningful commit messages
 
-This project is built with:
+## 📄 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is proprietary software owned by Asidocente. All rights reserved.
 
-## How can I deploy this project?
+## 📞 Contact & Support
 
-Simply open [Lovable](https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e) and click on Share -> Publish.
+- **Website**: [www.asidocente.com](https://www.asidocente.com)
+- **Twitter**: [@asidocente](https://twitter.com/asidocente)
+- **Issues**: For bug reports and feature requests, please use the [GitHub Issues](https://github.com/ElvisRocha/Asidocente-Landing-Page/issues) page
 
-## Can I connect a custom domain to my Lovable project?
+## 🎯 Vision
 
-Yes, you can!
+At Asidocente, we envision a future where technology empowers educators to focus on what truly matters: inspiring and guiding students. By automating administrative tasks and leveraging artificial intelligence, we're helping teachers reclaim their time and passion for education.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Together, we're building the future of education in Latin America.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+**Made with ❤️ for teachers by the Asidocente team**
