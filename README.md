@@ -2,141 +2,141 @@
 
 ![Asidocente Logo](src/assets/asidocente-logo.png)
 
-## 🎓 About Asidocente
+## 🎓 Acerca de Asidocente
 
-**Asidocente** is the intelligent tool designed specifically for primary school educators in Latin America. Our platform simplifies academic management, saves valuable time, and enhances communication with parents through AI-powered automation.
+**Asidocente** es la herramienta inteligente diseñada específicamente para docentes de primaria en Latinoamérica. Nuestra plataforma simplifica la gestión académica, ahorra tiempo valioso y mejora la comunicación con los padres mediante automatización impulsada por inteligencia artificial.
 
-Visit us at: **[www.asidocente.com](https://www.asidocente.com)**
+Visítanos en: **[www.asidocente.com](https://www.asidocente.com)**
 
-## 🌟 Project Overview
+## 🌟 Descripción del Proyecto
 
-This repository contains the official landing page for Asidocente, showcasing our mission to transform how teachers work by providing them with modern, intuitive tools for:
+Este repositorio contiene la página de inicio oficial de Asidocente, mostrando nuestra misión de transformar la forma en que los docentes trabajan al proporcionarles herramientas modernas e intuitivas para:
 
-- **Simplified Academic Management** - Streamline administrative tasks and focus more on teaching
-- **Time-Saving Automation** - Let AI handle repetitive tasks so you can dedicate time to your students
-- **Enhanced Parent Communication** - Keep parents informed and engaged with ease
-- **Smart Planning** - AI-assisted lesson planning and curriculum management
-- **Progress Tracking** - Monitor student development with intelligent insights
+- **Gestión Académica Simplificada** - Optimiza las tareas administrativas y enfócate más en enseñar
+- **Automatización que Ahorra Tiempo** - Deja que la IA maneje tareas repetitivas para que puedas dedicar tiempo a tus estudiantes
+- **Comunicación Mejorada con Padres** - Mantén a los padres informados e involucrados con facilidad
+- **Planificación Inteligente** - Planificación de lecciones y gestión curricular asistida por IA
+- **Seguimiento de Progreso** - Monitorea el desarrollo de los estudiantes con información inteligente
 
-## ✨ Features
+## ✨ Características
 
-- **Modern, Responsive Design** - Optimized for all devices and screen sizes
-- **Fast Performance** - Built with Vite for lightning-fast load times
-- **Accessibility** - Designed with inclusive practices for all users
-- **SEO Optimized** - Proper meta tags and semantic HTML for better discoverability
-- **Multi-language Ready** - Structured for easy internationalization
-- **Component-Based Architecture** - Modular, maintainable, and scalable
+- **Diseño Moderno y Responsivo** - Optimizado para todos los dispositivos y tamaños de pantalla
+- **Rendimiento Rápido** - Construido con Vite para tiempos de carga ultrarrápidos
+- **Accesibilidad** - Diseñado con prácticas inclusivas para todos los usuarios
+- **Optimizado para SEO** - Etiquetas meta adecuadas y HTML semántico para mejor descubrimiento
+- **Multilingüe** - Estructurado para fácil internacionalización
+- **Arquitectura Basada en Componentes** - Modular, mantenible y escalable
 
-## 🚀 Getting Started
+## 🚀 Comenzando
 
-### Prerequisites
+### Requisitos Previos
 
-Before you begin, ensure you have the following installed:
-- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
-- **npm** or **yarn** package manager
-- **Git** for version control
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- **Node.js** (v18 o superior) - [Descargar aquí](https://nodejs.org/)
+- **npm** o **yarn** como gestor de paquetes
+- **Git** para control de versiones
 
-### Installation
+### Instalación
 
-1. **Clone the repository**
+1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/ElvisRocha/Asidocente-Landing-Page.git
    ```
 
-2. **Navigate to the project directory**
+2. **Navegar al directorio del proyecto**
    ```bash
    cd Asidocente-Landing-Page
    ```
 
-3. **Install dependencies**
+3. **Instalar dependencias**
    ```bash
    npm install
    ```
 
-4. **Start the development server**
+4. **Iniciar el servidor de desarrollo**
    ```bash
    npm run dev
    ```
 
-   The application will be available at `http://localhost:8080`
+   La aplicación estará disponible en `http://localhost:8080`
 
-### Available Scripts
+### Scripts Disponibles
 
-- `npm run dev` - Start the development server with hot-reload
-- `npm run build` - Build the production-ready application
-- `npm run build:dev` - Build with development mode enabled
-- `npm run preview` - Preview the production build locally
-- `npm run lint` - Run ESLint to check code quality
+- `npm run dev` - Inicia el servidor de desarrollo con recarga en caliente
+- `npm run build` - Construye la aplicación lista para producción
+- `npm run build:dev` - Construye con modo de desarrollo habilitado
+- `npm run preview` - Previsualiza la construcción de producción localmente
+- `npm run lint` - Ejecuta ESLint para verificar la calidad del código
 
-## 🛠️ Technology Stack
+## 🛠️ Stack Tecnológico
 
-This project is built with modern web technologies:
+Este proyecto está construido con tecnologías web modernas:
 
-- **[Vite](https://vitejs.dev/)** - Next-generation frontend tooling
-- **[React 18](https://react.dev/)** - UI library for building interactive interfaces
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful, accessible component library
-- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible UI primitives
-- **[React Router](https://reactrouter.com/)** - Client-side routing
-- **[React Hook Form](https://react-hook-form.com/)** - Performant form validation
-- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
+- **[Vite](https://vitejs.dev/)** - Herramientas de frontend de próxima generación
+- **[React 18](https://react.dev/)** - Biblioteca de UI para construir interfaces interactivas
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript con tipos seguros
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS de utilidades
+- **[shadcn/ui](https://ui.shadcn.com/)** - Biblioteca de componentes hermosa y accesible
+- **[Radix UI](https://www.radix-ui.com/)** - Primitivas de UI sin estilo y accesibles
+- **[React Router](https://reactrouter.com/)** - Enrutamiento del lado del cliente
+- **[React Hook Form](https://react-hook-form.com/)** - Validación de formularios de alto rendimiento
+- **[Lucide React](https://lucide.dev/)** - Biblioteca de iconos hermosos
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
 Asidocente-Landing-Page/
 ├── src/
-│   ├── assets/          # Images, logos, and static files
-│   ├── components/      # Reusable React components
-│   │   └── ui/         # shadcn/ui components
-│   ├── contexts/        # React Context providers
-│   ├── hooks/          # Custom React hooks
-│   ├── lib/            # Utility functions and helpers
-│   ├── pages/          # Page components
-│   └── main.tsx        # Application entry point
-├── public/             # Public static assets
-├── index.html          # HTML entry point
-├── vite.config.ts      # Vite configuration
-├── tailwind.config.ts  # Tailwind CSS configuration
-└── tsconfig.json       # TypeScript configuration
+│   ├── assets/          # Imágenes, logos y archivos estáticos
+│   ├── components/      # Componentes React reutilizables
+│   │   └── ui/         # Componentes de shadcn/ui
+│   ├── contexts/        # Proveedores de React Context
+│   ├── hooks/          # Hooks personalizados de React
+│   ├── lib/            # Funciones de utilidad y helpers
+│   ├── pages/          # Componentes de página
+│   └── main.tsx        # Punto de entrada de la aplicación
+├── public/             # Recursos estáticos públicos
+├── index.html          # Punto de entrada HTML
+├── vite.config.ts      # Configuración de Vite
+├── tailwind.config.ts  # Configuración de Tailwind CSS
+└── tsconfig.json       # Configuración de TypeScript
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuir
 
-We welcome contributions from the community! Here's how you can help:
+¡Damos la bienvenida a contribuciones de la comunidad! Así es como puedes ayudar:
 
-1. **Fork the repository** on GitHub
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Make your changes** following our coding standards
-4. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-5. **Push to your branch** (`git push origin feature/amazing-feature`)
-6. **Open a Pull Request** with a clear description of your changes
+1. **Haz un fork del repositorio** en GitHub
+2. **Crea una rama de feature** (`git checkout -b feature/caracteristica-increible`)
+3. **Realiza tus cambios** siguiendo nuestros estándares de código
+4. **Haz commit de tus cambios** (`git commit -m 'Agregar característica increíble'`)
+5. **Haz push a tu rama** (`git push origin feature/caracteristica-increible`)
+6. **Abre un Pull Request** con una descripción clara de tus cambios
 
-### Coding Standards
+### Estándares de Código
 
-- Write clean, readable, and well-documented code
-- Follow the existing code style and conventions
-- Use TypeScript types for all new code
-- Test your changes thoroughly before submitting
-- Keep commits atomic and write meaningful commit messages
+- Escribe código limpio, legible y bien documentado
+- Sigue el estilo de código y las convenciones existentes
+- Usa tipos de TypeScript para todo código nuevo
+- Prueba tus cambios exhaustivamente antes de enviar
+- Mantén los commits atómicos y escribe mensajes de commit significativos
 
-## 📄 License
+## 📄 Licencia
 
-This project is proprietary software owned by Asidocente. All rights reserved.
+Este proyecto es software propietario de Asidocente. Todos los derechos reservados.
 
-## 📞 Contact & Support
+## 📞 Contacto y Soporte
 
-- **Website**: [www.asidocente.com](https://www.asidocente.com)
+- **Sitio Web**: [www.asidocente.com](https://www.asidocente.com)
 - **Twitter**: [@asidocente](https://twitter.com/asidocente)
-- **Issues**: For bug reports and feature requests, please use the [GitHub Issues](https://github.com/ElvisRocha/Asidocente-Landing-Page/issues) page
+- **Issues**: Para reportes de errores y solicitudes de características, por favor usa la página de [GitHub Issues](https://github.com/ElvisRocha/Asidocente-Landing-Page/issues)
 
-## 🎯 Vision
+## 🎯 Visión
 
-At Asidocente, we envision a future where technology empowers educators to focus on what truly matters: inspiring and guiding students. By automating administrative tasks and leveraging artificial intelligence, we're helping teachers reclaim their time and passion for education.
+En Asidocente, visualizamos un futuro donde la tecnología empodera a los educadores para enfocarse en lo que realmente importa: inspirar y guiar a los estudiantes. Al automatizar las tareas administrativas y aprovechar la inteligencia artificial, estamos ayudando a los docentes a recuperar su tiempo y pasión por la educación.
 
-Together, we're building the future of education in Latin America.
+Juntos, estamos construyendo el futuro de la educación en Latinoamérica.
 
 ---
 
-**Made with ❤️ for teachers by the Asidocente team**
+**Hecho con ❤️ para docentes por el equipo de Asidocente**
