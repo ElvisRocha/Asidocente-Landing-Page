@@ -1,4 +1,4 @@
-# Asidocente Landing Page ![Asidocente Logo](src/assets/asidocente-logo.png)
+# Asidocente Landing Page <img src="src/assets/asidocente-logo.png" alt="Asidocente Logo" width="40" />
 
 ## 🎓 Acerca de Asidocente
 
