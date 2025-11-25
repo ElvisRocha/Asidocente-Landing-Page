@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+# Asidocente Landing Page
 
-## Project info
+![Asidocente Logo](src/assets/asidocente-logo.png)
 
-**URL**: https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e
+## 🎓 Acerca de Asidocente
 
-## How can I edit this code?
+**Asidocente** es la herramienta inteligente diseñada específicamente para docentes de primaria en Latinoamérica. Nuestra plataforma simplifica la gestión académica, ahorra tiempo valioso y mejora la comunicación con los padres mediante automatización impulsada por inteligencia artificial.
 
-There are several ways of editing your application.
+Visítanos en: **[www.asidocente.com](https://www.asidocente.com)**
 
-**Use Lovable**
+## 🌟 Descripción del Proyecto
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e) and start prompting.
+Este repositorio contiene la página de inicio oficial de Asidocente, mostrando nuestra misión de transformar la forma en que los docentes trabajan al proporcionarles herramientas modernas e intuitivas para:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Gestión Académica Simplificada** - Optimiza las tareas administrativas y enfócate más en enseñar
+- **Automatización que Ahorra Tiempo** - Deja que la IA maneje tareas repetitivas para que puedas dedicar tiempo a tus estudiantes
+- **Comunicación Mejorada con Padres** - Mantén a los padres informados e involucrados con facilidad
+- **Planificación Inteligente** - Planificación de lecciones y gestión curricular asistida por IA
+- **Seguimiento de Progreso** - Monitorea el desarrollo de los estudiantes con información inteligente
 
-**Use your preferred IDE**
+## ✨ Características
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Diseño Moderno y Responsivo** - Optimizado para todos los dispositivos y tamaños de pantalla
+- **Rendimiento Rápido** - Construido con Vite para tiempos de carga ultrarrápidos
+- **Accesibilidad** - Diseñado con prácticas inclusivas para todos los usuarios
+- **Optimizado para SEO** - Etiquetas meta adecuadas y HTML semántico para mejor descubrimiento
+- **Multilingüe** - Estructurado para fácil internacionalización
+- **Arquitectura Basada en Componentes** - Modular, mantenible y escalable
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Comenzando
 
-Follow these steps:
+### Requisitos Previos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- **Node.js** (v18 o superior) - [Descargar aquí](https://nodejs.org/)
+- **npm** o **yarn** como gestor de paquetes
+- **Git** para control de versiones
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Instalación
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/ElvisRocha/Asidocente-Landing-Page.git
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Navegar al directorio del proyecto**
+   ```bash
+   cd Asidocente-Landing-Page
+   ```
+
+3. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+4. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+   La aplicación estará disponible en `http://localhost:8080`
+
+### Scripts Disponibles
+
+- `npm run dev` - Inicia el servidor de desarrollo con recarga en caliente
+- `npm run build` - Construye la aplicación lista para producción
+- `npm run build:dev` - Construye con modo de desarrollo habilitado
+- `npm run preview` - Previsualiza la construcción de producción localmente
+- `npm run lint` - Ejecuta ESLint para verificar la calidad del código
+
+## 🛠️ Stack Tecnológico
+
+Este proyecto está construido con tecnologías web modernas:
+
+- **[Vite](https://vitejs.dev/)** - Herramientas de frontend de próxima generación
+- **[React 18](https://react.dev/)** - Biblioteca de UI para construir interfaces interactivas
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript con tipos seguros
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS de utilidades
+- **[shadcn/ui](https://ui.shadcn.com/)** - Biblioteca de componentes hermosa y accesible
+- **[Radix UI](https://www.radix-ui.com/)** - Primitivas de UI sin estilo y accesibles
+- **[React Router](https://reactrouter.com/)** - Enrutamiento del lado del cliente
+- **[React Hook Form](https://react-hook-form.com/)** - Validación de formularios de alto rendimiento
+- **[Lucide React](https://lucide.dev/)** - Biblioteca de iconos hermosos
+
+## 📁 Estructura del Proyecto
+
+```
+Asidocente-Landing-Page/
+├── src/
+│   ├── assets/          # Imágenes, logos y archivos estáticos
+│   ├── components/      # Componentes React reutilizables
+│   │   └── ui/         # Componentes de shadcn/ui
+│   ├── contexts/        # Proveedores de React Context
+│   ├── hooks/          # Hooks personalizados de React
+│   ├── lib/            # Funciones de utilidad y helpers
+│   ├── pages/          # Componentes de página
+│   └── main.tsx        # Punto de entrada de la aplicación
+├── public/             # Recursos estáticos públicos
+├── index.html          # Punto de entrada HTML
+├── vite.config.ts      # Configuración de Vite
+├── tailwind.config.ts  # Configuración de Tailwind CSS
+└── tsconfig.json       # Configuración de TypeScript
 ```
 
-**Edit a file directly in GitHub**
+## 🤝 Contribuir
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+¡Damos la bienvenida a contribuciones de la comunidad! Así es como puedes ayudar:
 
-**Use GitHub Codespaces**
+1. **Haz un fork del repositorio** en GitHub
+2. **Crea una rama de feature** (`git checkout -b feature/caracteristica-increible`)
+3. **Realiza tus cambios** siguiendo nuestros estándares de código
+4. **Haz commit de tus cambios** (`git commit -m 'Agregar característica increíble'`)
+5. **Haz push a tu rama** (`git push origin feature/caracteristica-increible`)
+6. **Abre un Pull Request** con una descripción clara de tus cambios
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Estándares de Código
 
-## What technologies are used for this project?
+- Escribe código limpio, legible y bien documentado
+- Sigue el estilo de código y las convenciones existentes
+- Usa tipos de TypeScript para todo código nuevo
+- Prueba tus cambios exhaustivamente antes de enviar
+- Mantén los commits atómicos y escribe mensajes de commit significativos
 
-This project is built with:
+## 📄 Licencia
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Este proyecto es software propietario de Asidocente. Todos los derechos reservados.
 
-## How can I deploy this project?
+## 📞 Contacto y Soporte
 
-Simply open [Lovable](https://lovable.dev/projects/4abedb87-13bc-4119-888a-e248716e0b1e) and click on Share -> Publish.
+- **Sitio Web**: [www.asidocente.com](https://www.asidocente.com)
+- **Twitter**: [@asidocente](https://twitter.com/asidocente)
+- **Issues**: Para reportes de errores y solicitudes de características, por favor usa la página de [GitHub Issues](https://github.com/ElvisRocha/Asidocente-Landing-Page/issues)
 
-## Can I connect a custom domain to my Lovable project?
+## 🎯 Visión
 
-Yes, you can!
+En Asidocente, visualizamos un futuro donde la tecnología empodera a los educadores para enfocarse en lo que realmente importa: inspirar y guiar a los estudiantes. Al automatizar las tareas administrativas y aprovechar la inteligencia artificial, estamos ayudando a los docentes a recuperar su tiempo y pasión por la educación.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Juntos, estamos construyendo el futuro de la educación en Latinoamérica.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+**Hecho con ❤️ para docentes por el equipo de Asidocente**
