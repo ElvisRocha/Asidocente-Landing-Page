@@ -56,21 +56,8 @@ export function Contact() {
       message: formData.get('message') as string,
     };
 
-    const webhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL;
-
-    if (!webhookUrl) {
-      console.error('Webhook URL not configured');
-      toast({
-        title: 'Error de configuración',
-        description: 'El formulario no está configurado correctamente.',
-        variant: 'destructive',
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      const response = await fetch(webhookUrl, {
+      const response = await fetch(import.meta.env.VITE_N8N_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,18 +65,17 @@ export function Contact() {
         body: JSON.stringify(data),
       });
 
-      // Accept any 2xx status as success
-      if (response.status >= 200 && response.status < 300) {
-        toast({
-          title: t.contact.success,
-          description: t.contact.successDescription,
-        });
-
-        (e.target as HTMLFormElement).reset();
-        setSelectedCountry('');
-      } else {
-        throw new Error(`Server responded with status: ${response.status}`);
+      if (!response.ok) {
+        throw new Error('Error al enviar el mensaje');
       }
+
+      toast({
+        title: t.contact.success || '¡Mensaje enviado exitosamente!',
+        description: 'Nos pondremos en contacto contigo pronto.',
+      });
+
+      (e.target as HTMLFormElement).reset();
+      setSelectedCountry('');
     } catch (error) {
       console.error('Error:', error);
       toast({
