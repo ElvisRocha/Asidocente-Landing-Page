@@ -102,7 +102,8 @@ export const translations = {
         submit: 'Contactar Equipo',
         talk: 'Agendar una reunión',
       },
-      success: '¡Gracias! Te contactaremos pronto.',
+      success: '¡Mensaje enviado!',
+      successDescription: 'Nos pondremos en contacto contigo pronto.',
     },
     footer: {
       tagline: 'Enfócate en lo que realmente importa: enseñar.',
@@ -242,7 +243,8 @@ export const translations = {
         submit: 'Contact Team',
         talk: 'Schedule a Meeting',
       },
-      success: 'Thank you! We will contact you soon.',
+      success: 'Message sent!',
+      successDescription: 'We will be contacting you shortly.',
     },
     footer: {
       tagline: 'Focus on what really matters: teaching.',
